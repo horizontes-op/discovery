@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Jenkins Discovery') {
+        stage('discovery') {
             steps {
-                echo 'Jenkins Discovery'
+                echo 'discovery'
             }
         }
-        stage('Build') { 
+        stage('build discovery') { 
             steps {
                 sh 'mvn clean install'
             }
