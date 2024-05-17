@@ -16,6 +16,7 @@ spec:
       containers:
       - name: discovery
         image: fernandowi55/discovery:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8761
       
